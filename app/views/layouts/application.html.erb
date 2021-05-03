@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DemoBlogApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <section class="hero is-medium is-link">
+      <div class="hero-body">
+        <p class="title">
+          <%= yield :page_title%>
+        </p>
+        <p class="subtitle">
+          Medium subtitle
+        </p>
+      </div>
+    </section>
+    <%= yield %>
+  </body>
+</html>
